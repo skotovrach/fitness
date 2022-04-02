@@ -22,33 +22,3 @@ background-color: rgb(200, 240, 240);
 .alcove__item {
 padding: 5px 0 0 10px;
 }
-
-.footer__layout {
-    display: flex;
-    position: static;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo--footer {
-    position: static;
-    transform: translate(50%, 50%);
-    top: -50%; left: -50%;
-}
-
-.social {
-    position: static;
-}
-
-.social__list {
-    display: flex;
-}
-
-.social__item {
-    display: flex;
-    margin-right: 10px;
-}
-
-.social __link {
-    margin: auto;
-}
