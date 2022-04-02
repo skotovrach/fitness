@@ -1,0 +1,498 @@
+@import url(fonts.css);
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; display: inline-block
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+html, body, header, ul, li {
+    padding: 0; margin: 0;
+}
+
+/* ВАЖНАЯ ЧАСТЬ -1 */
+.wrapper {
+    overflow: hidden;
+    min-width: 1100px;
+    min-height: 100%;
+}
+
+.header {
+    background-color: #1A1B1C;
+    color: #fff;
+}
+
+.logo, .menu, .contacts, .menu__item {
+    display: inline-block;
+    font-size: 18px;   
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    /* background-color: darkcyan; */
+}
+
+.header__layout {
+    position: relative;
+    font-size: 0;
+    padding: 20px 20px 17px 20px;
+    height: 76px;
+}
+
+.logo, .logo__link {
+    font-family: 'Gora Free';
+    color: #e1942a;
+}
+
+.menu {
+    margin-left: 200px;
+}
+
+.menu__item {
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+/*===иконки выше текста===*/
+
+.menu__icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.menu__icon--curve {
+    background-image: url(/img/menu-icon-curve.png);
+}
+
+.menu__icon--star {
+    background-image: url(/img/menu-icon-star.png);
+}
+
+.menu__icon--barbell {
+    background-image: url(/img/menu-icon-barbell.png);
+}
+
+.menu__link {
+    color: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu__link--active {
+    color: #E1942A;
+}
+
+.contacts {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: right;
+}
+
+.phone__number {
+    color: inherit;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.schedule {
+    position: relative;
+}
+
+.schedule__title {
+    color: #e1942a;
+    font-weight: 700;
+}
+
+.schedule__drop-down {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 1.29em;
+    position: absolute;
+    right: 0;
+    display: none;
+    min-width: 162px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 5px 0px 5px 5px;   
+}
+
+.schedule__drop-down:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: brown;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+}
+
+.schedule:hover .schedule__drop-down {
+    display: block;
+}
+
+.schedule:hover .schedule__title {
+    color: #ccc;
+}
+
+.schedule__work-hours {
+    font-weight: 800;
+    color: #e1942a;
+    margin-bottom: 12px;
+}
+
+/* ====content==== */
+.hero {
+    text-align: center;
+    overflow: hidden;    
+    padding-top: 78px;
+    padding-bottom: 60px;
+
+}
+
+.hero__img {
+    margin-top: 78px;
+    margin-bottom: 57px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ВАЖНАЯ ЧАСТЬ -2
+КАРТИНКИ: BLOCK
+MAX-WIDTH: 100% 
+no-repeat
+center center
+contain
+overflow: hidden (избежать скролов)*/
+
+
+
+.features {
+    background-color: #1A1B1C;
+    padding-top: 46px;
+    padding-bottom: 96px;
+    color: white;
+    width: 100%;
+}
+
+
+.features__main-title {
+    font-size: 49px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.features__list {
+    font-size: 0;
+    width: 100%;
+    text-align: center;
+    margin-left: -30px;
+    padding-top: 50px;
+}
+
+.features__item {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 224px;
+    margin-left: 60px;
+}
+
+.features__icon-wrapper {
+    background-color: #e1942a;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.features__icon {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    display: block;
+}
+
+.features__title {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 56px;
+    
+}
+
+.features__description {
+    margin-top: 22px;
+}
+
+.feature__description-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+.feature__description-item {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.feature__description-list {
+list-style: none;
+margin-top: 20px;
+margin-left: 15px;
+line-height: 1.4;
+}
+
+.feature__description-item:before {
+    display: inline-block;
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+/* не понятно как задать ширину столбцов в особенностях 
+как выровнять по вертикали инлайн-блочные элементы*/
+
+.news {
+    width: 100%;
+    font-size: 0px;
+    padding-top: 52px;
+    padding-bottom: 66px;
+}
+
+.all-news, .top-news {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.all-news {
+    width: 900px;
+    padding-top: 44px;
+}
+
+.top-news {
+    width: 200px;
+    padding: 66px 20px 46px 20px;
+}
+
+.all-news__item {
+    width: 832px;
+    font-size: 0;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    display: inline-block;
+    border-bottom: 2px solid #f4f4f4;
+
+}
+
+.all-news__img-box, .all-news__content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.all-news__img-box {
+    width: 160px;
+    height: 160px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.news__img {
+    display: block;
+    width: 100%;
+}
+
+.all-news__content {
+    width: 672px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.all-news__date {
+    font-size: 14px;
+
+}
+
+.all-news__title {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.all-news__text {
+font-size: 18px;
+font-family: Roboto, sans-serif;
+line-height: 1.55;
+margin-top: 10px;
+}
+
+.news__main-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.top-news__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.58;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.top-news__img {
+    margin-top: 20px;
+}
+
+/* ПАГИНАЦИЯ */
+.pagination {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 34px;
+}
+
+.pagination__info {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.pagination__control {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.pagination__control--left {
+    background-image: url(/img/control-left.png);
+    background-repeat: no-repeat;
+    display: inline-block
+}
+
+.pagination__control--right {
+    background-image: url(/img/control-right.png);
+    background-repeat: no-repeat;
+    display: inline-block
+}
+
+.pagination__list, .pagination__item {
+    display: inline-block;
+}
+
+.pagination__link {    
+    color: #262424;
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+.pagination__link--active {
+    color: white;
+    background-color: #2b2b40;
+    border-radius: 5px;
+    /* vertical-align: middle; */
+    text-align: center;
+}
+
+/* FOOTER========= */
+
+.footer {
+   background-color: #1a1b1c;
+   padding-top: 14px;
+   padding-bottom: 12px;
+   vertical-align: middle;
+   color: white;
+}
+
+.footer__layout {
+    position: relative;
+    min-height: 75px;
+}
+
+.copyright, .footer .logo, .social, .social__item {
+    display: inline-block;
+}
+
+.copyright {
+    width: 250px;
+    margin-top: 15px;
+}
+
+.social-wrapper {
+    width: 250px;
+}
+
+.social {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social__link {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #cfcfcf;
+    text-align: center;
+    margin-top: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    object-fit: cover;
+}
+
+.social__item--active .social__link {
+    background-color: #e1942a;
+}
+
+ .social__icon {
+    
+    display:block; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+}
+
+.logo--footer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; left: 50%;
+}
