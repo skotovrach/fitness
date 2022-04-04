@@ -49,7 +49,6 @@ html, body, header, ul, li {
 }
 
 .logo, .menu, .contacts, .menu__item {
-    display: inline-block;
     font-size: 18px;   
 }
 
@@ -229,7 +228,6 @@ overflow: hidden (избежать скролов)*/
 }
 
 .features__item {
-    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     flex-shrink: 0;
@@ -496,7 +494,6 @@ margin-top: 10px;
     height: 24px;
     margin-right: 10px;
     border-radius: 50%;
-    display: inline-block;
     background-color: #cfcfcf;
     text-align: center;
     margin-top: 8px;
