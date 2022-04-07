@@ -460,6 +460,7 @@ margin-top: 10px;
 
 .pagination__list, .pagination__item {
     display: flex;
+    font-weight: 700;
 }
 
 .pagination__link {    
@@ -472,10 +473,14 @@ margin-top: 10px;
 }
 
 .pagination__link--active {
-    color: white;
+    color: #e09329;
     background-color: #2b2b40;
     border-radius: 5px;
     text-align: center;
+}
+
+.pagination__link:hover {
+    color: #e09329;
 }
 
 /* FOOTER========= */
@@ -539,7 +544,7 @@ margin-top: 10px;
 }
 
 /*****************************************/
-/*================COMMENTS===============*/
+/*================COMMENTS-box===============*/
 /*****************************************/
 
 
@@ -552,23 +557,36 @@ margin-top: 10px;
     padding-left: 110px;
 }
 
-/* BREADSCRUMBS */
+/* BREADSCRUMBS ========================*/
 
 .breadscrumbs__list {
     display: flex;
     padding-left: 110px;
+    font-style: italic;
 }
 
-.breadscrumbs__link:after {
+.breadscrumbs__item--active {
+    color: #E1942A;
+    text-decoration: underline;
+}
+
+.breadscrumbs__link:before {
     display: inline-block;
     content: '/';
     margin-left: 2px;
     margin-right: 2px;
 }
 
-.breadscrumbs__item:last-child .breadscrumbs__link:after {
+.breadscrumbs__item:first-child .breadscrumbs__link:before {
     display: none;
 }
+
+.breadscrumbs__link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* COMMENTS============================== */
 
 .comments {
     padding-left: 110px;
@@ -665,8 +683,16 @@ margin-top: 10px;
 
 .text__content {
     max-width: 100%;
+    min-height: 88px;
+    outline: none;
+    border: 1px solid #e1942a;
+    border-radius: 2px;
 }
 
 .add {
     justify-content: space-between;
+}
+
+.photo__answer--active {
+    color: #e1932a;
 }

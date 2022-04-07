@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <title>Document</title>
+    <title>! Comments and form</title>
 </head>
 <body>
     <div class="wrapper">
@@ -21,11 +21,11 @@
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <div class="menu__icon menu__icon--curve"></div>
-                                    <a href="#" class="menu__link menu__link--active">Главная</a>
+                                    <a href="/index.html" class="menu__link">Главная</a>
                                 </li>
                                 <li class="menu__item">
                                     <div class="menu__icon menu__icon--star"></div>
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="/html/comments.html" class="menu__link menu__link--active">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
                                     <div class="menu__icon menu__icon--barbell"></div>
@@ -52,11 +52,11 @@
                 <div class="container">
                     <nav class="breadscrumbs">
                         <ul class="breadscrumbs__list">
-                            <li class="breadscrumbs__item">
-                                <a href="#" class="breadscrumbs__link">Главная</a>
+                            <li class="breadscrumbs__item breadscrumbs__item--active">
+                                <a href="/index.html" class="breadscrumbs__link">Главная</a>
                             </li>
                             <li class="breadscrumbs__item">
-                                <a href="#" class="breadscrumbs__link">Отзывы</a>
+                                <a href="/html/comments.html" class="breadscrumbs__link">Отзывы</a>
                             </li>
                         </ul>
                     </nav>
@@ -159,12 +159,15 @@
                             </div>
                             <div class="add">
                                 <div class="photo">
-                                    <div class="photo__title">
-                                        <input type="radio" name="photo__swith" id="photo__swith--yes">
-                                        <label for="photo__swith--yes" class="photo__answer">Да</label>
-                                        <input type="radio" name="photo__swith" id="photo__swith--no">
-                                        <label for="photo__swith--no" class="photo__answer">Нет</label>
-                                    </div>
+                                    <div class="photo__title">Отображать фото в отзыве?</div>
+                                        <label for="photo__swith--yes" class="photo__answer photo__answer--active">
+                                            <input type="radio" name="photo__swith" id="photo__swith--yes">
+                                        Да
+                                        </label>
+                                        <label for="photo__swith--no" class="photo__answer">
+                                            <input type="radio" name="photo__swith" id="photo__swith--no">
+                                        Нет
+                                        </label>
                                 </div>
                                 <button class="button">Отправить</button>
                             </div>
