@@ -698,9 +698,17 @@ margin-top: 10px;
     margin: 0 auto;
 }
 
+.form__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-size: 700;
+    font-family: 'Open Sans', serif;
+}
+
 .form__row {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .form__column {
@@ -708,25 +716,46 @@ margin-top: 10px;
     flex-direction: column;
 }
 
-.form__user-name, .form__user-link {
+.form__column {
     display: block;
     flex-shrink: 0;
     flex-grow: 0;
-    width: 270px;
 }
+
+
+.form input, .form textarea, .form .button {
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.form__user-name, .form__user-link {
+    width: 270px;
+    padding: 16px 10px;
+    margin-top: 10px;
+}
+
 
 .form__textarea {
     display: block;
 }
 
-.form__textarea-content {
+.form .form__textarea-content {
     max-width: 100%;
     min-width: 100%;
     min-height: 88px;
     /* max-height: 88px; */
     outline: none;
     border: 1px solid #e1942a;
-    border-radius: 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form__photo-title {
+    margin-bottom: 10px;
+}
+
+.form__photo-answer {
+    margin-right: 20px;
 }
 
 /* .add {
@@ -738,6 +767,22 @@ margin-top: 10px;
     color: #e1932a;
 }
 
+
+.button {
+    width: 126px;
+    height: 46px;
+    background-color: #222423;
+    color: #fff;
+    font-family: 'Open Sans', serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e1942a;
+}
 
 /* ********************** */
 /* ====УСЛУГИ==== */
