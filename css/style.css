@@ -548,7 +548,7 @@ margin-top: 10px;
 /*****************************************/
 
 
-.content {
+.page {
     padding-top: 44px;
 }
 
@@ -693,6 +693,44 @@ margin-top: 10px;
     justify-content: space-between;
 }
 
+
 .photo__answer--active {
     color: #e1932a;
+}
+
+
+
+/* ********************** */
+/* ====УСЛУГИ==== */
+
+.services {
+    padding: 30px 100px 0px 100px;
+}
+
+.services__list {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.services__item {
+    flex-grow: 0;
+ flex-shrink: 0;
+ flex-basis: 290px;
+}
+
+.services__img-box {
+    width: 270px;
+    height: 174px;
+    overflow: hidden;
+}
+
+.services__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services__content {
+    padding: 10px;
 }
