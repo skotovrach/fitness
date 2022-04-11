@@ -161,19 +161,22 @@
                             <div class="form__row">
                                 <div class="form__photo">
                                     <div class="form__photo-title">Отображать фото в отзыве?</div>
-                                        <label for="form__photo-swith--yes" class="form__photo-answer form__photo-answer--active">
-                                            <input type="radio" name="form__photo-swith" id="form__photo-swith--yes" value="yes">
-                                        Да
-                                        </label>
-                                        <label for="form__photo-swith--no" class="form__photo-answer">
-                                            <input type="radio" name="form__photo-swith" id="form__photo-swith--no" value="no">
-                                        Нет
-                                        </label>
+                                        <div class="form__photo-content">
+                                            <label class="form__photo-answer" for="form__photo-switch--yes" >
+                                                <input type="radio" class="form__photo-switch" name="form__photo-switch" id="form__photo-switch--yes" value="yes">
+                                                <span class="form__photo-text">Да</span> 
+                                            </label>
+                                            <label class="form__photo-answer" for="form__photo-switch--no" >
+                                                <input type="radio" class="form__photo-switch" name="form__photo-switch" id="form__photo-switch--no" value="no">
+                                                <span class="form__photo-text">Нет</span>
+                                            </label>
+                                        </div>
                                 </div>
                                 <button class="button">Отправить</button>
                             </div>
                         </form>
                     </div>
+                    <!-- ------END form-box------------- -->
                 </div>
             </div>
         </div>
