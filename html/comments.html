@@ -23,7 +23,7 @@
                                     <div class="menu__icon menu__icon--curve"></div>
                                     <a href="/index.html" class="menu__link">Главная</a>
                                 </li>
-                                <li class="menu__item">
+                                <li class="menu__item menu__item--active">
                                     <div class="menu__icon menu__icon--star"></div>
                                     <a href="/html/comments.html" class="menu__link menu__link--active">Отзывы</a>
                                 </li>
@@ -55,7 +55,7 @@
                             <li class="breadscrumbs__item">
                                 <a href="/index.html" class="breadscrumbs__link">Главная</a>
                             </li>
-                            <li class="breadscrumbs__item">
+                            <li class="breadscrumbs__item breadscrumbs__item--active">
                                 <a href="/html/comments.html" class="breadscrumbs__link">Отзывы</a>
                             </li>
                         </ul>
@@ -141,38 +141,42 @@
             </div>
             <div class="form-wrapper">
                 <div class="container">
+                    <!-- -----------FORM------------ -->
                     <div class="form-box">
                         <h3 class="form__title">Оставить отзыв</h3>
                         <form action="" class="form">
-                            <div class="user">
-                                <label for="user__name" class="user__title">Ваше имя<br>                                
-                                <input class="user__name" id="user__name" type="text">
+                            <div class="form__row form__user">
+                                <label for="form__user-name" class="form__column form__user-title">Ваше имя<br>                                
+                                    <input class="form__user-name" id="form__user-name" type="text" placeholder="Андрей">
                                 </label>
-                                <label for="user__link" class="user__social">Ссылка на профиль VK<br>
-                                <input type="text" class="user__link" id="user__link">
-                                </label>
-                            </div>
-                            <div class="text">
-                                <label for="text__content" class="text__label">Текст отзыва<br>
-                                    <textarea name="" id="text__content" cols="30" rows="10" class="text__content"></textarea>
+                                <label for="form__user-link" class="form__column form__user-social">Ссылка на профиль VK<br>
+                                    <input type="text" class="form__user-link" id="form__user-link" placeholder="vk.com/example">
                                 </label>
                             </div>
-                            <div class="add">
-                                <div class="photo">
-                                    <div class="photo__title">Отображать фото в отзыве?</div>
-                                        <label for="photo__swith--yes" class="photo__answer photo__answer--active">
-                                            <input type="radio" name="photo__swith" id="photo__swith--yes">
-                                        Да
-                                        </label>
-                                        <label for="photo__swith--no" class="photo__answer">
-                                            <input type="radio" name="photo__swith" id="photo__swith--no">
-                                        Нет
-                                        </label>
+                            <div class=" form__row form__textarea">
+                                <label for="form__textarea-content" class="form__textarea-label">Текст отзыва<br>
+                                    <textarea class="form__textarea-content" name="" id="form__textarea-content"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__photo">
+                                    <div class="form__photo-title">Отображать фото в отзыве?</div>
+                                        <div class="form__photo-content">
+                                            <label class="form__photo-answer" for="form__photo-switch--yes" >
+                                                <input type="radio" class="form__photo-switch" name="form__photo-switch" id="form__photo-switch--yes" value="yes">
+                                                <span class="form__photo-text">Да</span> 
+                                            </label>
+                                            <label class="form__photo-answer" for="form__photo-switch--no" >
+                                                <input type="radio" class="form__photo-switch" name="form__photo-switch" id="form__photo-switch--no" value="no">
+                                                <span class="form__photo-text">Нет</span>
+                                            </label>
+                                        </div>
                                 </div>
                                 <button class="button">Отправить</button>
                             </div>
                         </form>
                     </div>
+                    <!-- ------END form-box------------- -->
                 </div>
             </div>
         </div>
