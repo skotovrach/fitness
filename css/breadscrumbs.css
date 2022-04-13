@@ -1,3 +1,8 @@
+
+.breadscrumbs {
+    padding-top: 44px;
+}
+
 .breadscrumbs__list {
     display: flex;
     padding-left: 110px;
