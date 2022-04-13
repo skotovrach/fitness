@@ -1,0 +1,55 @@
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+
+/*===иконки===*/
+
+.menu__icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.menu__icon--curve {
+    background-image: url(/img/menu-icon-curve.png);
+}
+
+.menu__item--active .menu__icon--curve {
+    background-image: url(/img/menu-icon-curve-active.png);
+}
+
+.menu__icon--star {
+    background-image: url(/img/menu-icon-star.png);
+}
+
+.menu__item--active .menu__icon--star {
+    background-image: url(/img/menu-icon-star-active.png);
+}
+
+.menu__icon--barbell {
+    background-image: url(/img/menu-icon-barbell.png);
+}
+
+.menu__item--active .menu__icon--barbell {
+    background-image: url(/img/menu-icon-barbell-active.png);
+}
+
+.menu__link {
+    color: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.11em;
+}
+
+.menu__item--active {
+    color: #E1942A;
+}

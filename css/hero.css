@@ -1,0 +1,14 @@
+.hero {
+    text-align: center;
+    overflow: hidden;    
+    padding-top: 78px;
+    padding-bottom: 60px;
+
+}
+
+.hero__img {
+    margin-top: 78px;
+    margin-bottom: 57px;
+    display: block;
+    margin: 0 auto;
+}

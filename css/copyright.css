@@ -1,0 +1,7 @@
+.copyright {
+    flex-shrink: 0;
+    flex-basis: 280px;
+    padding-left: 20px;
+    font-style: normal;
+    /* margin-top: 15px; */
+}

@@ -1,0 +1,23 @@
+.promo {
+    font-size: 18px;
+    color:#fff;
+    font-family: 'Open Sans', serif;
+    position: relative;
+}
+
+.promo__content {
+    position: absolute;
+    background-image: url(/img/promo/pattern.png);
+    background-color: #1a1b1c;
+    height: 172px;
+    width: 100%;
+    left: 0;
+    top: 60px;
+}
+
+.promo__text {
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; left: 50%;
+
+}

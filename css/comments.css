@@ -1,0 +1,39 @@
+.comments {
+    padding-left: 110px;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+.comments__item {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.comments__img-box {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+    /* object-fit: cover; */
+}
+
+.comments__img {
+    display: block;
+    width: 100%;
+}
+
+.comments__content {
+    margin-left: 20px;
+}
+
+.comments__title {
+    margin-top: 12px;
+}
+
+.comments__text {
+    margin-top: 16px;
+}

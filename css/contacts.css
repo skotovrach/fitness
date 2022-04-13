@@ -1,0 +1,81 @@
+.contacts {
+    text-align: right;
+}
+
+.phone__number {
+    color: inherit;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/* DROPDOWN IS HERE ;) */
+
+.schedule {
+    position: relative;
+    height: 100%;
+    display:inline-block;
+}
+
+
+.schedule__title {
+    color: #e1942a;
+    font-weight: 700;
+}
+
+.schedule__title:hover {
+    cursor: pointer;
+}
+
+.schedule__drop-down {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 1.29em;
+    position: absolute;
+    right: 0;
+    display: none;
+    min-width: 162px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: brown;
+    border-radius: 5px 0px 5px 5px;   
+    width: 166px;
+    text-align: center;
+}
+
+.schedule__drop-down:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: brown;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+    transform-origin: top right;
+}
+
+.schedule__drop-down:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: 0;
+    margin-top: -20px;
+    width: 100%;
+    height: 20px;
+    /* background-color: #E1942A; */
+}
+
+.schedule:hover .schedule__drop-down {
+    display: block;
+}
+
+.schedule:hover .schedule__title {
+    color: #ccc;
+}
+
+.schedule__work-hours {
+    font-weight: 800;
+    color: #e1942a;
+    margin-bottom: 12px;
+}

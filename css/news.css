@@ -1,0 +1,75 @@
+/* НОВОСТИ */
+
+.news {
+    width: 100%;
+    padding-top: 58px;
+    padding-bottom: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news__main-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.news__layout {
+    display: flex;
+}
+
+.all-news {
+    display: flex;
+    padding-top: 44px;
+}
+
+
+.all-news__item {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    display: flex;
+    border-bottom: 2px solid #f4f4f4;
+
+}
+
+.all-news__img-box {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.news__img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.all-news__content {
+    padding-left: 20px;
+}
+
+.all-news__date {
+    font-size: 14px;
+
+}
+
+.all-news__title {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.all-news__text {
+font-size: 18px;
+font-family: Roboto, sans-serif;
+line-height: 1.55;
+margin-top: 10px;
+}

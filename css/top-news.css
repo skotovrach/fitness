@@ -1,0 +1,30 @@
+/* ТОП НОВОСТЕЙ */
+
+.top-news {
+    flex-grow: 0;
+    flex-basis: 200px;
+    padding: 66px 20px 46px 20px;
+}
+
+.top-news__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 1.58;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.top-news__list {
+    width: 100%;
+}
+
+.top-news__item {
+    overflow: hidden;
+    width: 160px;
+}
+
+.top-news__img {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}

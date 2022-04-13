@@ -1,0 +1,30 @@
+.social {
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+.social__link {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #cfcfcf;
+    text-align: center;
+    margin-top: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+    position: relative;
+    object-fit: cover;
+}
+
+.social__item--active .social__link {
+    background-color: #e1942a;
+}
+
+ .social__icon {    
+    display:block; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+}

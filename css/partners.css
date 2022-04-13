@@ -1,0 +1,89 @@
+.partners {
+    padding: 80px 170px;
+}
+
+.partners__title {
+    margin-left: -60px;
+    padding-top: 64px;
+    text-transform: uppercase;
+}
+
+.partners__list {
+    padding-top: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partners__list + .partners__list {
+    padding-top: 50px;
+}
+
+.partners__item {
+    margin: 10px;
+}
+
+.partners__link {
+    display: block;
+    background-color: #e09329;
+    /* width: 170px;
+    height: 66px; */
+}
+
+/* =============СПРАЙТЫ=============== */
+
+
+.partners__link-1 {
+    width: 141px; height: 63px;
+    background: url('/img/partners/css-sprites.png') -10px -10px;
+}
+
+.partners__link-1:hover {
+    background: url('/img/partners/css-sprites.png') -171px -10px;
+}
+
+.partners__link-2 {
+    width: 160px; height: 28px;
+    background: url('/img/partners/css-sprites.png') -332px -10px;
+}
+
+.partners__link-2:hover {
+    background: url('/img/partners/css-sprites.png') -332px -58px;
+}
+
+.partners__link-3 {
+    width: 61px; height: 62px;
+    background: url('/img/partners/css-sprites.png') -332px -106px;
+}
+
+.partners__link-3:hover {
+    background: url('/img/partners/css-sprites.png') -413px -106px;
+}
+
+.partners__link-4 {
+    width: 125px; height: 64px;
+    background: url('/img/partners/css-sprites.png') -10px -93px;
+}
+
+.partners__link-4:hover {
+    background: url('/img/partners/css-sprites.png') -155px -93px;
+}
+
+.partners__link-5 {
+    width: 160px; height: 45px;
+    background: url('/img/partners/css-sprites.png') -10px -177px;
+}
+
+.partners__link-5:hover {
+    background: url('/img/partners/css-sprites.png') -10px -242px;
+}
+
+.partners__link-6 {
+    width: 42px; height: 62px;
+    background: url('/img/partners/css-sprites.png') -332px -188px;
+}
+
+.partners__link-6:hover {
+    background: url('/img/partners/css-sprites.png') -394px -188px;
+}

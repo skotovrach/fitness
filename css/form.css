@@ -1,0 +1,140 @@
+
+.form-wrapper {
+    padding-top: 290px;
+    padding-bottom: 60px;
+}
+
+.form-box {
+    width: 700px;
+    background-color: #f4f4f4;
+    padding: 50px 70px;
+    margin: 0 auto;
+}
+
+.form__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-size: 700;
+    font-family: 'Open Sans', serif;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.form__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__column {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+
+.form input, .form textarea, .form .button {
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.form__user-name, .form__user-link {
+    width: 270px;
+    padding: 16px 10px;
+    margin-top: 10px;
+}
+
+
+.form__textarea {
+    display: block;
+}
+
+.form .form__textarea-content {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 88px;
+    /* max-height: 88px; */
+    outline: none;
+    border: 1px solid #e1942a;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form__photo-title {
+    margin-bottom: 10px;
+}
+
+.form__photo-content {
+    display: flex;
+}
+
+.form__photo-answer {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* flex-wrap: nowrap; */
+}
+
+
+.form__photo-switch:checked + .form__photo-text {
+    color: #e1932a;
+}
+
+.form__photo-switch {
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+    display: none;
+}
+
+.form__photo-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+    line-height: 1.72;
+}
+
+.form__photo-text:before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    border: 1px solid red;
+    border-radius: 50%;
+    display: inline-block;
+    /* background-color: #2b2b40; */
+    margin-right: 10px;
+    position: absolute;
+    top: 0; left: 0;
+} 
+.form__photo-switch:checked + .form__photo-text:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    display: block;
+    background-color: #e1942a;
+    margin-right: 10px;
+    position: absolute;
+    top: 8px; left: 8px;
+} 
+
+.button {
+    width: 126px;
+    height: 46px;
+    background-color: #222423;
+    color: #fff;
+    font-family: 'Open Sans', serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e1942a;
+}
