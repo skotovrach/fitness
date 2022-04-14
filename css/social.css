@@ -15,29 +15,38 @@
     vertical-align: middle;
     position: relative;
     object-fit: cover;
-    background-repeat: no-repeat;
+    transition: .3s;
 }
 
-.social__item--active .social__link {
+.social__link:hover {
     background-color: #e1942a;
+    transition: .2s;
 }
 
-.social__link--fb {
+ .social__icon {    
+    display: block; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+}
+
+.social__icon--fb {
     width: 6px; height: 13px;
-    background: url('/img/social-sprites.png') -73px -10px;
+    background: url('/img/social-sprite.png') -73px -10px;
 }
 
-.social__link--mail {
+.social__icon--mail {
     width: 12px; height: 9px;
-    background: url('/img/social-sprites.png') -10px -10px;
+    background: url('/img/social-sprite.png') -10px -10px;
 }
 
-.social__link--tw {
+.social__icon--tw {
     width: 11px; height: 9px;
-    background: url('/img/social-sprites.png') -42px -10px;
+    background: url('/img/social-sprite.png') -42px -10px;
 }
 
-.social__link--vk {
+.social__icon--vk {
     width: 12px; height: 7px;
-    background: url('/img/social-sprites.png') -10px -39px;
+    background: url('/img/social-sprite.png') -10px -39px;
 }
