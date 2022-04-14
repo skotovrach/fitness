@@ -29,3 +29,22 @@
     left: 50%; 
 }
 
+.bg-social_fb {
+    width: 6px; height: 13px;
+    background: url('css_sprites.png') -73px -10px;
+}
+
+.bg-social_mail {
+    width: 12px; height: 9px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-social_twitter {
+    width: 11px; height: 9px;
+    background: url('css_sprites.png') -42px -10px;
+}
+
+.bg-social_vk {
+    width: 12px; height: 7px;
+    background: url('css_sprites.png') -10px -39px;
+}

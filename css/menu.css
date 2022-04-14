@@ -53,3 +53,33 @@
 .menu__item--active {
     color: #E1942A;
 }
+
+.bg-menu_icon_barbell {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -10px -48px;
+}
+
+.bg-menu_icon_barbell_active {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -49px -48px;
+}
+
+.bg-menu_icon_curve {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -90px -10px;
+}
+
+.bg-menu_icon_curve_active {
+    width: 19px; height: 14px;
+    background: url('css_sprites.png') -90px -44px;
+}
+
+.bg-menu_icon_star {
+    width: 20px; height: 18px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-menu_icon_star_active {
+    width: 20px; height: 18px;
+    background: url('css_sprites.png') -50px -10px;
+}
