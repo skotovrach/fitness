@@ -15,36 +15,29 @@
     vertical-align: middle;
     position: relative;
     object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 .social__item--active .social__link {
     background-color: #e1942a;
 }
 
- .social__icon {    
-    display:block; 
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%; 
-}
-
-.bg-social_fb {
+.social__link--fb {
     width: 6px; height: 13px;
-    background: url('css_sprites.png') -73px -10px;
+    background: url('/img/social-sprites.png') -73px -10px;
 }
 
-.bg-social_mail {
+.social__link--mail {
     width: 12px; height: 9px;
-    background: url('css_sprites.png') -10px -10px;
+    background: url('/img/social-sprites.png') -10px -10px;
 }
 
-.bg-social_twitter {
+.social__link--tw {
     width: 11px; height: 9px;
-    background: url('css_sprites.png') -42px -10px;
+    background: url('/img/social-sprites.png') -42px -10px;
 }
 
-.bg-social_vk {
+.social__link--vk {
     width: 12px; height: 7px;
-    background: url('css_sprites.png') -10px -39px;
+    background: url('/img/social-sprites.png') -10px -39px;
 }
