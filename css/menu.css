@@ -11,38 +11,6 @@
 
 /*===иконки===*/
 
-.menu__icon {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.menu__icon--curve {
-    background-image: url(/img/menu-icon-curve.png);
-}
-
-.menu__item--active .menu__icon--curve {
-    background-image: url(/img/menu-icon-curve-active.png);
-}
-
-.menu__icon--star {
-    background-image: url(/img/menu-icon-star.png);
-}
-
-.menu__item--active .menu__icon--star {
-    background-image: url(/img/menu-icon-star-active.png);
-}
-
-.menu__icon--barbell {
-    background-image: url(/img/menu-icon-barbell.png);
-}
-
-.menu__item--active .menu__icon--barbell {
-    background-image: url(/img/menu-icon-barbell-active.png);
-}
-
 .menu__link {
     color: inherit;
     font-weight: 700;
@@ -50,36 +18,46 @@
     line-height: 1.11em;
 }
 
+.menu__link:before {
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .menu__item--active {
     color: #E1942A;
 }
 
-.bg-menu_icon_barbell {
+.menu__link--barbell:before {
     width: 19px; height: 14px;
-    background: url('css_sprites.png') -10px -48px;
+    background: url('/img/menu-sprites.png') -10px -48px;
 }
 
-.bg-menu_icon_barbell_active {
+.menu__item--active .menu__link--barbell:before {
     width: 19px; height: 14px;
-    background: url('css_sprites.png') -49px -48px;
+    background: url('/img/menu-sprites.png') -49px -48px;
 }
 
-.bg-menu_icon_curve {
+.menu__link--curve:before {
     width: 19px; height: 14px;
-    background: url('css_sprites.png') -90px -10px;
+    background: url('/img/menu-sprites.png') -90px -10px;
 }
 
-.bg-menu_icon_curve_active {
+.menu__item--active .menu__link--curve:before {
     width: 19px; height: 14px;
-    background: url('css_sprites.png') -90px -44px;
+    background: url('/img/menu-sprites.png') -90px -44px;
 }
 
-.bg-menu_icon_star {
+.menu__link--star:before {
     width: 20px; height: 18px;
-    background: url('css_sprites.png') -10px -10px;
+    background: url('/img/menu-sprites.png') -10px -10px;
 }
 
-.bg-menu_icon_star_active {
+.menu__item--active .menu__link--star:before {
     width: 20px; height: 18px;
-    background: url('css_sprites.png') -50px -10px;
+    background: url('/img/menu-sprites.png') -50px -10px;
 }
